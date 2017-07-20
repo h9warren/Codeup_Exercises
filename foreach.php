@@ -36,7 +36,6 @@ foreach ($things as $index) {
     echo "Array ";
      foreach ($index as $values) {
        echo "$values ";
-       continue;
      }
     echo"\n";
   } else {
