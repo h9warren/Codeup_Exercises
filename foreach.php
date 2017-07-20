@@ -24,8 +24,22 @@ $things = array('Sgt. Pepper', "11", null, array(1,2,3), 3.14, "12 + 7", false, 
 //   echo "{$type}\n";
 // }
 
+// foreach ($things as $index) {
+//   if (is_scalar($index)) {
+//     echo "{$index}\n";
+//   }
+// }
+
 foreach ($things as $index) {
-  if (is_scalar($index)) {
+
+  if (is_array($index)) {
+    echo "Array ";
+     foreach ($index as $values) {
+       echo "$values ";
+       continue;
+     }
+    echo"\n";
+  } else {
     echo "{$index}\n";
   }
 }
