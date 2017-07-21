@@ -22,3 +22,13 @@ $books = array(
         'pages' => 544
     )
 );
+
+
+foreach($books as $book => $info) {
+    echo "$book was ";
+    foreach($info as $attr => $val) {
+      echo "$attr in {$info['published']} by {$info['author']}. {$info['pages']} pages.\n";
+      break;
+    }
+    echo "====================\n";
+  }
