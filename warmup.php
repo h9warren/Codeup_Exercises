@@ -9,11 +9,11 @@ foreach($testArray as $value) {
     if ($value % 2 == 0) {
       $value = abs($value);
       $result *= $value;
-    }
-    else {
+      echo $result .PHP_EOL;
+    } else {
       $value = abs($value);
       $result += $value;
+      echo $result .PHP_EOL;
     }
   }
-  echo $result .PHP_EOL;
 };
