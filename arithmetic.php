@@ -7,17 +7,28 @@ function add($a, $b)
 
 function subtract($a, $b)
 {
-    // Add code here
+    return $a - $b;
 }
 
 function multiply($a, $b)
 {
-    // Add code here
+    return $a * $b;
 }
 
 function divide($a, $b)
 {
-    // Add code here
+    return $a / $b;
 }
 
 // Add code to test your functions here
+$sum = add(5, 6);
+echo $sum .PHP_EOL;
+
+$diff = subtract(8.5, 6.25);
+echo $diff .PHP_EOL;
+
+$mult = multiply(3, 6);
+echo $mult .PHP_EOL;
+
+$quo = divide(81, 9);
+echo $quo .PHP_EOL;
