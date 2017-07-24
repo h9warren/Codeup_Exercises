@@ -5,27 +5,43 @@ $b = 4;
 
 function add($a, $b)
 {
+  if (is_numeric($a) && is_numeric($b)) {
     return $a + $b;
+  }
 }
 
 function subtract($a, $b)
 {
+  if (is_numeric($a) && is_numeric($b)) {
     return $a - $b;
+  }
 }
 
 function multiply($a, $b)
 {
+  if (is_numeric($a) && is_numeric($b)) {
     return $a * $b;
+  }
 }
 
 function divide($a, $b)
 {
-    return $a / $b;
+  if (is_numeric($a) && is_numeric($b)) {
+    if ($b > 0) {
+      return $a / $b;
+    }
+  }
 }
+
+
 function modulus($a, $b)
 {
-    return $a % $b;
+  if ((is_numeric($a) && is_numeric($b)) &&
+    ($b != 0)) {
+      return $a % $b;
+  }
 }
+
 
 // Add code to test your functions here
 $sum = add(5, 6);
