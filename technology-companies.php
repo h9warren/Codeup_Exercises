@@ -45,10 +45,41 @@ $companies = [
     ]
 ];
 
-// print_r($companies);
-// var_dump($companies);
+
 
 ksort($companies);
-foreach($companies as $company => $people) {
-  echo $company . PHP_EOL;
+foreach($companies as $key => $company) {
+  echo "==============================\n";
+  echo "$key:" . PHP_EOL;
+  asort($company);
+  $companies[$key] = $company;
+  echo "\n";
+  print_r($companies);
+  arsort($companies);
+
+
 }
+// ksort($companies);
+// foreach($companies as $company => $people) {
+//   echo "==============================\n";
+//   echo "$company:" . PHP_EOL;
+//   asort($people);
+//   foreach($people as $person) {
+//     echo "$person, ";
+//   }
+//     echo "\n";
+// }
+
+
+// ksort($companies);
+// foreach($companies as $company => $people) {
+//   echo "==============================\n";
+//   echo "$company:" . PHP_EOL;
+//   foreach($people as $person) {
+//     $name = explode(" ", $person);
+//     $lastFirst = array_reverse($name, true);
+//     print_r($lastFirst);
+//     echo asort($lastFirst);
+//   }
+//   echo "\n";
+// }
