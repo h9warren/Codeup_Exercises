@@ -44,3 +44,11 @@ $companies = [
         'Jean-Louis Gassée'
     ]
 ];
+
+// print_r($companies);
+// var_dump($companies);
+
+ksort($companies);
+foreach($companies as $company => $people) {
+  echo $company . PHP_EOL;
+}
