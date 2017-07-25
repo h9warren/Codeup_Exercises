@@ -17,6 +17,7 @@
 // combineArrays($names, $compare);
 
 
+// BONUS: different lengths
 $names = ['Tina', 'Dana', 'Mike', 'Amy', 'Adam', 'Johnny', 'Liz'];
 
 $compare = ['Tina', 'Dean', 'Mel', 'Amy', 'Michael'];
@@ -40,20 +41,7 @@ function combineArrays($array1, $array2) {
 combineArrays($compare, $names);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// not to spec
 
 // function combineArrays($array1, $array2) {
 //   $newArray = [];
