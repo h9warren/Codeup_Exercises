@@ -135,7 +135,7 @@ class PHPAssessmentTests extends PHPUnit_Framework_TestCase
         );
     }
 
-    public function last()
+    public function test_last()
     {
         $this->assertTrue(
             function_exists('last'),
